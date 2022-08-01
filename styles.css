@@ -1,0 +1,31 @@
+.everything {
+    text-align: center;
+}
+
+#calculate {
+    background-color: black;
+    border: solid;
+    color: white;
+    border-radius: 4px;
+}
+
+#calculate:hover{
+    background-color: white;
+    color: black;
+    border: solid;
+}
+#calculate:active{
+    background-color: gray;
+    color: black;
+    border: solid;
+}
+
+#totalAmountText{
+    pointer-events: none;
+    background-color: 	 #acacac;
+    color: white;
+    border-radius: 4px;
+}
+.errorStyle{
+    background-color:red;
+}

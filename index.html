@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="everything">
+        <h1 id="header">How much are you going to tip?</h1>
+        <h4 id="tipPercent">Enter tip percentage</h4>
+        <input type="number" id="tipPercentText"> <br> <br>
+        <button type="button" id="10" onclick="getTenPercent()">10%</button>
+        <button type="button" id="15" onclick="getFifPercent()">15%</button>
+        <button type="button" id="20" onclick="getTwenPercent()">20%</button> <br>
+        <h4 id="amount">Enter the amount</h4>
+        <input type="number" id="amountText">
+        <h4 id="totalAmount">Total Amount</h4>
+        <input type="text" id="totalAmountText"> <br> <br>        
+        <button type="button" id="calculate" onclick="getTotalAmount()" value="Display">Calculate</button>
+    </div>
+    <script type="text/javascript" src="app.js"> </script>
+</body>
+</html>
