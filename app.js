@@ -14,14 +14,17 @@ function getTwenPercent(){
 }
 function getTotalAmount(){
     var percent = parseInt(document.getElementById("tipPercentText").value);
-    let firstAmount = parseInt(document.getElementById("amountText").value);   
-    if(isNaN(percent)){
-        document.getElementById("tipPercentText").setAttribute("class", "errorStyle");
-        alert("The percent must be a number")
-    } else if(isNaN(firstAmount)){
-        document.getElementById("tipPercentText").setAttribute("class", "null");
+    let firstAmount = parseInt(document.getElementById("amountText").value); 
+      
+    if (isNaN(firstAmount)){
         document.getElementById("amountText").setAttribute("class", "errorStyle");
         alert("The amount must be a number")
+
+    } else if(isNaN(percent)){
+            document.getElementById("amountText").setAttribute("class", "null");
+            document.getElementById("tipPercentText").setAttribute("class", "errorStyle");
+            alert("The percent must be a number")
+
     } else {
         document.getElementById("tipPercentText").setAttribute("class", "null");
         document.getElementById("amountText").setAttribute("class", "null");
