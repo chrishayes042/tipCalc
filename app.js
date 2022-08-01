@@ -2,12 +2,15 @@
 
 function getTenPercent(){
   document.getElementById("tipPercentText").value = 10;
+  document.getElementById("tipPercentText").setAttribute("class", "null");
 }
 function getFifPercent(){
     document.getElementById("tipPercentText").value = 15;
+    document.getElementById("tipPercentText").setAttribute("class", "null");
 }
 function getTwenPercent(){
     document.getElementById("tipPercentText").value = 20;
+    document.getElementById("tipPercentText").setAttribute("class", "null");
 }
 function getTotalAmount(){
     var percent = parseInt(document.getElementById("tipPercentText").value);
@@ -20,7 +23,7 @@ function getTotalAmount(){
         document.getElementById("amountText").setAttribute("class", "errorStyle");
         alert("The amount must be a number")
     } else {
-        
+        document.getElementById("tipPercentText").setAttribute("class", "null");
         document.getElementById("amountText").setAttribute("class", "null");
     }
     percent = percent / 100
@@ -32,8 +35,3 @@ function getTotalAmount(){
     
 
 }
-
-// window.onload = function(){
-//     let btn = document.getElementById("calculate");
-//     btn.onclick = getTotalAmount();
-// }

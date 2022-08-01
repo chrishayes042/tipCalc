@@ -28,4 +28,6 @@
 }
 .errorStyle{
     background-color:red;
+    border: solid; 
+    border-color: red;
 }
